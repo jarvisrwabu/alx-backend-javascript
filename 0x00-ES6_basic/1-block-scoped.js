@@ -1,4 +1,4 @@
-export default function taskBlock (trueOrFalse) {
+export default function taskBlock(trueOrFalse) {
   let task = false; // using let to allow reassignment
   let task2 = true;
 
