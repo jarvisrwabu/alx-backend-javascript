@@ -1,9 +1,7 @@
-// eslint-disable-next-line no-unused-vars
-const getListStudents = () => {
-  const myObject = [
-    { id: 1, firstName: 'Guillaume', location: 'San Francisco' },
-    { id: 2, firstName: 'James', location: 'Columbia' },
-    { id: 5, firstName: 'Serena', location: 'San Francisco' },
-  ];
-  return myObject;
-};
+const getListStudents = () => [
+  { id: 1, firstName: 'Guillaume', location: 'San Francisco' },
+  { id: 2, firstName: 'James', location: 'Columbia' },
+  { id: 5, firstName: 'Serena', location: 'San Francisco' },
+];
+
+export default getListStudents;
