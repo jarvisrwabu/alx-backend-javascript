@@ -62,3 +62,16 @@ const createEmployee = (value: string | number): Teacher | Director => {
     }
 
 };
+
+// Define the isDirector function
+function isDirector(employee: any): employee is Director {
+    return (employee instanceof Director);
+}
+
+const executeWork = (employee: Teacher | Director): void =>{
+    if (isDirector(employee)) {
+        console.log(employee.workDirectorTasks()); // Call method for Director
+    } else {
+        console.log(employee.workTeacherTasks()); // Call method for Teacher
+    }
+};
