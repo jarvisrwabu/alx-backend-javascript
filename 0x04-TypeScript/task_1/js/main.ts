@@ -7,3 +7,7 @@ interface Teacher {
     [key: string]: any;          // Allows additional attributes with any name and type
 
 };
+
+interface Directors extends Teacher {
+    numberOfReports: number;
+};
