@@ -68,10 +68,22 @@ function isDirector(employee: any): employee is Director {
     return (employee instanceof Director);
 }
 
-const executeWork = (employee: Teacher | Director): void =>{
+const executeWork = (employee: Teacher | Director): void => {
     if (isDirector(employee)) {
         console.log(employee.workDirectorTasks()); // Call method for Director
     } else {
         console.log(employee.workTeacherTasks()); // Call method for Teacher
+    }
+};
+
+type Subjects = "Math" | "History";
+
+const teachClass = (todayClass: Subjects): string => {
+    if (todayClass === "Math") {
+        return "Teaching Math";
+    }
+
+    else if (todayClass === "History") {
+        return "Teaching History";
     }
 };
